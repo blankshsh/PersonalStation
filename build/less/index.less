@@ -327,14 +327,16 @@ header {
                     top: 22%;
                     left: 15%;
                     i {
-                        background: url(../img/1.jpg) 50% 50% no-repeat;
+                        background: url(../img/works/01/01.png) 50% 50% no-repeat;
+                        background-size: 150px auto;
                     }
                 }
                 &:nth-child(2) {
                     top: 57%;
                     left: 32%;
                     i {
-                        background: url(../img/2.jpg) 50% 50% no-repeat;
+                        background: url(../img/works/02/1.jpg) 50% 50% no-repeat;
+                        background-size: auto 150px;
                     }
                 }
                 &:nth-child(3) {
@@ -470,7 +472,7 @@ header {
         display: none;
         .left {
             position: absolute;
-            left: 20%;
+            left: 100px;
             top: 50%;
             display: block;
             background: url(../img/left.png) 0 0 no-repeat;
@@ -486,7 +488,7 @@ header {
         }
         .right {
             position: absolute;
-            right: 20%;
+            right: 100px;
             top: 50%;
             display: block;
             background: url(../img/right.png) 0 0 no-repeat;
@@ -510,7 +512,7 @@ header {
             background: url(../img/close.png) no-repeat;
             background-size: 100% 100%;
             &:hover {
-                animation: gear_round 0.6s linear;
+                animation: gear_round2 0.5s linear;
             }
         }
     }
@@ -519,6 +521,12 @@ header {
 @keyframes gear_round {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes gear_round2 {
+    100% {
+        transform: rotate(180deg);
     }
 }
 

@@ -1,5 +1,4 @@
 function btnclick() {
-    console.log("blankshsh@163.com");
     //点击显示星际轨道
     $("#round").on("click", function() {
         $(".line-l").animate({
@@ -46,7 +45,7 @@ function hover() {
         setTimeout(function() {
             $(".dot ul li p").css("opacity", "0");
             $(".dot ul li i").css("opacity", "0");
-        }, 3000)
+        }, 1000)
     })
 
     //星际轨道hover显示小图片
